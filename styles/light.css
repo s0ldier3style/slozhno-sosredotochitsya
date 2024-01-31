@@ -1,12 +1,47 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-color: #353430;
+  --main-bg-color: #fff1f7;
+  --main-bg-image: url(../images/cover-image-light.png);
+  --main-font: "IBM Plex Mono", Arial, sans-serif;
+  --main-accent-color: #ff8dcb;
+  --main-title-color: #ffc2e6;
+  --main-title-shadow-color: #ff0070;
+  --subtitle-font-color: #353430;
+  --section-color: #353430;
+  --decoration-color: #353430;
+  --button: #353430;
+  --hover: #353430;
+}
+
+.theme_light .secret::after {
+  display: none;
+}
+
+.theme_light .secret::before {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: #353430;
+    --main-bg-color: #fff1f7;
+    --main-bg-image: url(../images/cover-image-light.png);
+    --main-font: "IBM Plex Mono", Arial, sans-serif;
+    --main-accent-color: #ff8dcb;
+    --main-title-color: #ffc2e6;
+    --main-title-shadow-color: #ff0070;
+    --subtitle-font-color: #353430;
+    --section-color: #353430;
+    --decoration-color: #353430;
+    --button: #353430;
+    --hover: #353430;
+  }
+
+  .theme_light .secret::after {
+    display: none;
+  }
+
+  .theme_light .secret::before {
+    display: none;
+  }
 }
