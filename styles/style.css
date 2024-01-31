@@ -12,6 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: var(--main-bg-color);
 }
 
 /*Desktop*/
