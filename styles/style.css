@@ -152,6 +152,10 @@
   margin-block-end: 10px;
 }
 
+.subtitle_margin {
+  margin-block-start: 10px;
+}
+
 .main-content {
   margin-block-end: 60px;
 }
@@ -269,9 +273,7 @@
   position: relative;
 }
 
-/*Tablets
-Не понимаю как сделать картинки как в макете для этого экрана. Там расхождения не очень большие,
-но заметные, да. У меня вообще нет идей. Можете намекнуть, пожалуйста? */
+/*Tablets*/
 @media (768px <= width < 1024px) {
   .decorated-zone::before {
     bottom: 20px;
@@ -322,7 +324,7 @@
     grid-template-columns: fit-content(236px) 1fr;
   }
 
-  .section-column {
+  .section-column-list {
     display: flex;
     flex-direction: column;
   }
@@ -427,6 +429,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-block-start: 0px;
   }
 
   .picture {
